@@ -20,40 +20,15 @@ YOU ALSO MAY RENAME THE DRIVE TO WHATEVER YOU LIKE
 ITS THAT EASY
 
 next in uploading code go to the pico's drive and create a text file then name it into boot
-now copy and paste the code below (reset mechanism using BOOTSEL button)
-*****************************************************************************************************************************************
-import machine, rp2
+now copy and paste the code(the code is available  IN RELEASES boot.py file)  (reset mechanism using BOOTSEL button)
 
-machine.freq(200_000_000)
-
-def check_reset(t):
-    if rp2.bootsel_button():
-        while rp2.bootsel_button():
-            pass
-        machine.reset()
-
-tim = machine.Timer()
-tim.init(period=100, mode=machine.Timer.PERIODIC, callback=check_reset)
-******************************************************************************************************************************************
 
 now in notepad click File-Save As then file name boot.py,then change save as type to all files and save it to the root directory of the pico drive not the RPI-RP2 drive
 
 NOW UNPLUG THE PICO AND PLUG IT BACK IN AND THE DRIVE SHOULD POP UP AGAIN NOW PRESS THE BOOTSEL BUTTON AND THE DRIVE SHOULD DISAPPEAR AND APPEAR AGAIN (IF NOT PRESS THE REFRESH BUTTON IN EXPLORER)
 
-now to upload our main.py code create a new txt file there change its name to main then open it in notepad and paste this code
+now to upload our main.py code create a new txt file there change its name to main then open it in notepad and paste the code (availabe in releases main.py file)
 
-******************************************************************************************************************************************
-from machine import Pin
-import time
-
-# "LED" automatically targets the onboard LED across all Pico models
-led = Pin("LED", Pin.OUT)
-
-while True:
-    led.toggle()      # Switches the LED state (On to Off / Off to On)   
-    time.sleep(0.5)   # Pauses for 0.5 seconds (Change this to adjust speed)
-******************************************************************************************************************************************
 then file-save as,then name -main.py and change save as type to all files (this is way we upload code here it applies for any code) and save it to the root of the pico,now if you look at the pico the led wont blink,beacuse there is one more step that is to press the BOOTSEL button to reset the pico ans thats the end of this readme
 
-also the code in the readme maybe a little like buggy so i will post the code in releases
 ***********************______**************************THE END**************************************************************************
