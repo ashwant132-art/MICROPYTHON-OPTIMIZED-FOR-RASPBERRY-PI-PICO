@@ -22,7 +22,7 @@ YOU ALSO MAY RENAME THE DRIVE TO WHATEVER YOU LIKE
 ITS THAT EASY
 
 next in uploading code go to the pico's drive and create a text file then name it into boot
-now copy and paste the code(the code is available  IN RELEASES boot.py file)  (reset mechanism using BOOTSEL button)
+now copy and paste the code(the code is available  IN RELEASES boot.py file)  (reset mechanism using BOOTSEL button) **(also i recommend now to mees with the code in boot.py because that could brick the pico's reset thing and when you save code u need to yank the cable and plug it abck again and its annoying thtas the main reason i built this)**
 
 
 now in notepad click File-Save As then file name boot.py,then change save as type to all files and save it to the root directory of the pico drive not the RPI-RP2 drive
