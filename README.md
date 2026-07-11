@@ -1,11 +1,11 @@
 🌟 Key Features
 
-☆Fixed Flash Allocation: Custom-compiled at a hard 1MB storage boundary . 
+☆ Fixed Flash Allocation: Custom-compiled at a hard 1MB storage boundary . 
 
-☆Completely fixes the bug where the Pico panics and wipes/deletes your main.py file on reboot.
+☆ Completely fixes the bug where the Pico panics and wipes/deletes your main.py file on reboot.
 
 
-Slick Drive Identity: Set up to cleanly mount ☆as a reliable virtual drive just like Circuitpython 
+☆ Slick Drive Identity: Set up to cleanly mount as a reliable virtual drive just like Circuitpython 
 
 💾 Installation
 
