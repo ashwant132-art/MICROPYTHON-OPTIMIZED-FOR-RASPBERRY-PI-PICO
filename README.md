@@ -15,7 +15,7 @@ A custom-compiled MicroPython firmware for the Raspberry Pi Pico designed for hi
 
 ### Step 1: Flash the Firmware
 1. Hold the **BOOTSEL** button on your Pico and plug it into your device.
-2. *(Highly Recommended)* Drag and drop the `nuke_flash.uf2` file (available in Releases) onto the **RPI-RP2** volume. Wait for the onboard LED to turn off. If the volume doesn't reappear automatically, unplug it, hold **BOOTSEL**, and plug it back in.
+2. *(Highly Recommended)* Drag and drop the `ERASE-FLASH.uf2` file (available in Releases) onto the **RPI-RP2** volume. Wait for the onboard LED to turn off. If the volume doesn't reappear automatically, unplug it, hold **BOOTSEL**, and plug it back in.
 3. Drag and drop the custom `firmware.uf2` file from the latest release onto the **RPI-RP2** volume. 
 4. The Pico will automatically reboot and mount as a new virtual drive. *Note: You can rename this drive to whatever you like!*
 
