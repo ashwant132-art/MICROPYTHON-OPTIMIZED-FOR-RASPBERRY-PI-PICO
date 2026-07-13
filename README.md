@@ -26,9 +26,11 @@ To enable the background BOOTSEL reset mechanism without yanking the USB cable:
 3. Click **File -> Save As**, name the file `boot.py`, set the type to **All Files (*.*)**, and save it directly to the root directory of the Pico drive.
 4. ⚠️ **Important:** Do not modify the core logic inside `boot.py`, as breaking the hardware timer loop will disable the soft-reset feature!
 
+**AFTER DOING THAT MAKE SURE TO EJECT THE DRIVE THEN POWER CYCLE THE PICO**
+
 ### Step 3: Verify the Reset Mechanism
 1. Unplug the Pico and plug it back in.
-2. Press the physics **BOOTSEL** button on the board. The drive should instantly disappear and reappear. *(If it doesn't seem to refresh on your screen, click the refresh button in your file explorer).*
+2. Press the  **BOOTSEL** button on the board. The drive should instantly disappear and reappear. *(If it doesn't seem to refresh on your screen, click the refresh button in your file explorer).*
 
 ### Step 4: Upload Your `main.py` Code
 1. Create a new text file on the root of the Pico drive.
